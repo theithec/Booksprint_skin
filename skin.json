@@ -1,0 +1,54 @@
+{
+	"name": "Handbuchio2",
+	"version": "1.0",
+	"author": "...",
+	"url": "https://www.mediawiki.org/wiki/Skin:Handbuchio2",
+	"descriptionmsg": "handbuchio2-desc",
+	"namemsg": "skinname-handbuchio2",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"ValidSkinNames": {
+		"handbuchio2": "Handbuchio2"
+	},
+	"MessagesDirs": {
+		"Handbuchio2": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.handbuchio2": {
+			"class": "ResourceLoaderSkinModule",
+			"position": "top",
+			"styles": {
+				"resources/libraries/normalise.css": {
+					"media": "NONE"
+				},
+
+				"dist/assets/css/app.css": {
+					"media": "screen"
+				},
+	
+				
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.handbuchio2.js": {
+			"position": "bottom",
+			"scripts": [
+				"resources/main.js",
+				"dist/assets/js/app.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Handbuchio2"
+	},
+	"AutoloadClasses": {
+		"SkinHandbuchio2": "Handbuchio2.skin.php",
+		"Handbuchio2Template": "Handbuchio2Template.php"
+	},
+	"manifest_version": 1
+}
