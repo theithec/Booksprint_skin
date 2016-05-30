@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": [ "..." ]
 	},
-	"skinname-handbuchio2": "{{optional}}",
-	"handbuchio2-desc": "{{desc|what=skin|name=Booksprint_skin|url=https://www.mediawiki.org/wiki/Skin:Booksprint_skin}}",
+	"skinname-booksprint_skin": "{{optional}}",
+	"booksprint_skin-desc": "{{desc|what=skin|name=Booksprint_skin|url=https://www.mediawiki.org/wiki/Skin:Booksprint_skin}}",
   "namespaces": "AAAAA"
 }

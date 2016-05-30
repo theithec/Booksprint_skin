@@ -3,12 +3,12 @@
 	"version": "1.0",
 	"author": "...",
 	"url": "https://www.mediawiki.org/wiki/Skin:Booksprint_skin",
-	"descriptionmsg": "handbuchio2-desc",
-	"namemsg": "skinname-handbuchio2",
+	"descriptionmsg": "booksprint_skin-desc",
+	"namemsg": "skinname-booksprint_skin",
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
-		"handbuchio2": "Booksprint_skin"
+		"booksprint_skin": "Booksprint_skin"
 	},
 	"MessagesDirs": {
 		"Booksprint_skin": [
@@ -16,7 +16,7 @@
 		]
 	},
 	"ResourceModules": {
-		"skins.handbuchio2": {
+		"skins.booksprint_skin": {
 			"class": "ResourceLoaderSkinModule",
 			"position": "top",
 			"styles": {
@@ -34,7 +34,7 @@
 				}
 			}
 		},
-		"skins.handbuchio2.js": {
+		"skins.booksprint_skin.js": {
 			"position": "bottom",
 			"scripts": [
 				"resources/main.js",

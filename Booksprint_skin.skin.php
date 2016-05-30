@@ -5,7 +5,7 @@
  * @ingroup Skins
  */
 class SkinBooksprint_skin extends SkinTemplate {
-	public $skinname = 'handbuchio2', $stylename = 'Booksprint_skin',
+	public $skinname = 'booksprint_skin', $stylename = 'Booksprint_skin',
 		$template = 'Booksprint_skinTemplate', $useHeadElement = true;
 
 	/**
@@ -20,10 +20,10 @@ class SkinBooksprint_skin extends SkinTemplate {
 		$out->addModuleStyles( array(
 			'mediawiki.skinning.interface',
 			'mediawiki.skinning.content.externallinks',
-			'skins.handbuchio2'
+			'skins.booksprint_skin'
 		) );
 		$out->addModules( array(
-			'skins.handbuchio2.js'
+			'skins.booksprint_skin.js'
 		) );
 	}
 
