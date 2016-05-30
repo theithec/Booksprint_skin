@@ -1,10 +1,10 @@
 <?php
 /**
- * BaseTemplate class for the Handbuchio2 skin
+ * BaseTemplate class for the Booksprint_skin skin
  *
  * @ingroup Skins
  */
-class Handbuchio2Template extends BaseTemplate {
+class Booksprint_skinTemplate extends BaseTemplate {
   /**
    * Outputs the entire contents of the page
    */

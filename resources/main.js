@@ -1,1 +1,1 @@
-/* JavaScript for the Handbuchio2 skin */
+/* JavaScript for the Booksprint_skin skin */

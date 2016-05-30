@@ -1,12 +1,12 @@
 <?php
 /**
- * SkinTemplate class for the Handbuchio2 skin
+ * SkinTemplate class for the Booksprint_skin skin
  *
  * @ingroup Skins
  */
-class SkinHandbuchio2 extends SkinTemplate {
-	public $skinname = 'handbuchio2', $stylename = 'Handbuchio2',
-		$template = 'Handbuchio2Template', $useHeadElement = true;
+class SkinBooksprint_skin extends SkinTemplate {
+	public $skinname = 'handbuchio2', $stylename = 'Booksprint_skin',
+		$template = 'Booksprint_skinTemplate', $useHeadElement = true;
 
 	/**
 	 * Add CSS via ResourceLoader

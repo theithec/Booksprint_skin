@@ -4,7 +4,7 @@
  * instead. See https://www.mediawiki.org/wiki/Manual:Extension_registration for more details.
  */
 if ( !function_exists( 'wfLoadSkin' ) ) {
-	die( 'The Handbuchio2 skin requires MediaWiki 1.25 or newer.' );
+	die( 'The Booksprint_skin skin requires MediaWiki 1.25 or newer.' );
 }
 
-wfLoadSkin( 'Handbuchio2' );
+wfLoadSkin( 'Booksprint_skin' );

@@ -1,17 +1,17 @@
 {
-	"name": "Handbuchio2",
+	"name": "Booksprint_skin",
 	"version": "1.0",
 	"author": "...",
-	"url": "https://www.mediawiki.org/wiki/Skin:Handbuchio2",
+	"url": "https://www.mediawiki.org/wiki/Skin:Booksprint_skin",
 	"descriptionmsg": "handbuchio2-desc",
 	"namemsg": "skinname-handbuchio2",
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
-		"handbuchio2": "Handbuchio2"
+		"handbuchio2": "Booksprint_skin"
 	},
 	"MessagesDirs": {
-		"Handbuchio2": [
+		"Booksprint_skin": [
 			"i18n"
 		]
 	},
@@ -44,11 +44,11 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Handbuchio2"
+		"remoteSkinPath": "Booksprint_skin"
 	},
 	"AutoloadClasses": {
-		"SkinHandbuchio2": "Handbuchio2.skin.php",
-		"Handbuchio2Template": "Handbuchio2Template.php"
+		"SkinBooksprint_skin": "Booksprint_skin.skin.php",
+		"Booksprint_skinTemplate": "Booksprint_skinTemplate.php"
 	},
 	"manifest_version": 1
 }
