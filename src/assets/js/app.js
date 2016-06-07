@@ -1,8 +1,8 @@
-$(document).foundation();
 
-/* 
-// toggle nested menu entries 
 $(document).ready( function(){
+  $(document).foundation();
+
+/*	// toggle nested menu entries 
   var $subs = $("#toc>ul>li>ul");
   $subs.hide();
   $subs.each(function(index, obj){
@@ -21,6 +21,6 @@ $(document).ready( function(){
       $target.text("+");
     }
   });
-  //alert("x");
+  */
+
 });
-*/

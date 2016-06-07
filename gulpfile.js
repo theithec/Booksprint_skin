@@ -27,17 +27,21 @@ var PATHS = {
     'bower_components/motion-ui/src/'
   ],
   javascript: [
-    'bower_components/jquery/dist/jquery.js',
+  /*
+	    */
+    //'bower_components/jquery/dist/jquery.js',
     'bower_components/what-input/what-input.js',
     'bower_components/foundation-sites/js/foundation.core.js',
     'bower_components/foundation-sites/js/foundation.util.*.js',
     // Paths to individual JS components defined below
-    'bower_components/foundation-sites/js/foundation.abide.js',
+    /*'bower_components/foundation-sites/js/foundation.abide.js',
     'bower_components/foundation-sites/js/foundation.accordion.js',
     'bower_components/foundation-sites/js/foundation.accordionMenu.js',
     'bower_components/foundation-sites/js/foundation.drilldown.js',
+    */
     'bower_components/foundation-sites/js/foundation.dropdown.js',
     'bower_components/foundation-sites/js/foundation.dropdownMenu.js',
+    /*
     'bower_components/foundation-sites/js/foundation.equalizer.js',
     'bower_components/foundation-sites/js/foundation.interchange.js',
     'bower_components/foundation-sites/js/foundation.magellan.js',
@@ -51,7 +55,8 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.tabs.js',
     'bower_components/foundation-sites/js/foundation.toggler.js',
     'bower_components/foundation-sites/js/foundation.tooltip.js',
-    'src/assets/js/**/!(app).js',
+    'src/assets/js/<RM>**<RM>/!(app).js',
+    */
     'src/assets/js/app.js'
   ]
 };
@@ -137,7 +142,7 @@ gulp.task('javascript', function() {
     }));
 
   return gulp.src(PATHS.javascript)
-    .pipe($.sourcemaps.init())
+    //.pipe($.sourcemaps.init())
     .pipe($.concat('app.js'))
     .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
