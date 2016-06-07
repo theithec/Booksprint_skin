@@ -1,6 +1,7 @@
 $(document).foundation();
-//alert("x");
 
+/* 
+// toggle nested menu entries 
 $(document).ready( function(){
   var $subs = $("#toc>ul>li>ul");
   $subs.hide();
@@ -22,4 +23,4 @@ $(document).ready( function(){
   });
   //alert("x");
 });
-
+*/

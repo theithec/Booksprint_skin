@@ -44,6 +44,7 @@
 // 1. Global
 // ---------
 
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -61,7 +62,8 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $secondary-color;
-$body-font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: 'Roboto Condensed', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Arial, sans-serif;
 //$body-font-family: 'Roboto Slab', Helvetica, Roboto, Arial, sans-serif;
 
 $body-antialiased: true;
@@ -147,7 +149,7 @@ $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
+$list-style-type: square;
 $list-style-position: outside;
 $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;

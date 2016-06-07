@@ -17,7 +17,7 @@ class Booksprint_skinTemplate extends BaseTemplate {
     //$this->outputLogo();
 ?>
 <header class="columns">
-<img src="<?php echo $this->text('stylepath'); ?>/<?php echo $this->text('stylename'); ?>/dist/assets/img/TIB_LogoNT_de.png" alt="TIB Logo" />
+<a href="<?php global $wgScriptPath;echo $wgScriptPath ?>"><img src="<?php echo $this->text('stylepath'); ?>/<?php echo $this->text('stylename'); ?>/dist/assets/img/TIB_LogoNT_de.png" alt="TIB Logo" /></a>
 <div id="user-tools" class="subnav">
 <?php $this->outputUserLinks(); ?>
 </div>
