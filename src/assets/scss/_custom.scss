@@ -20,16 +20,22 @@ input[type=submit]{
 		display: none;
 	}
 }
+a, a:visited {
+			
+			color: $primary-color;
+			&.new {
+				color: orange;
+				font-style: italic;
+			
+			}
+	}
 #mw-wrapper {
 	header {
 		img { float: left; height: 100px;}
 		h1 { display: inline;border: none; }
 		#user-tools { float:right; font-size: 0.8em;}
 	}
-	a, a:visited {
-			
-			color: $primary-color;
-	}
+	
 	div.mw-body[role=main] {
 		background: $white;
 		padding-top: 1em;
@@ -55,12 +61,19 @@ input[type=submit]{
 }
 
 #mw-content-text {
-	font-family: arial, serif;
+	//font-family: arial, serif;
 	max-width: 40em;
-	h1,h2,h3,h4,h5,h6, input, div[class^='mw-'] {
-		font-family: 'Roboto Condensed', sans-serif;
-	}
+	//h1,h2,h3,h4,h5,h6, input, div[class^='mw-'] { }
 
+}
+
+.pseudoh1{
+	@extend h1;
+} 
+h1, h2, h3, input, .pseudoh1 {
+	&, &>div[class^='mw-'] {
+		font-family: 'Roboto Condensed', sans-serif; // !important;
+	}	
 }
 
 .ve-init-target {
@@ -102,9 +115,6 @@ footer.row {
 }
 
 
-.pseudoh1 {
-	@extend h1;
-}
 
 @include breakpoint(medium up) {
 	div.mw-body[role=main] {
