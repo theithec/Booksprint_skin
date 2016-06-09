@@ -113,10 +113,16 @@ footer.row {
 		}
 	}
 }
-
-
-
+/*
+p, table, li, a {
+    font-size: 12px;
+}
+*/
 @include breakpoint(medium up) {
+    /*
+    p, table, li, a{
+        font-size: 22px;
+    }*/
 	div.mw-body[role=main] {
 		border-radius: .5em;
 		border: solid  #efefef thin;
