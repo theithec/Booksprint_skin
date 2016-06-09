@@ -50,7 +50,7 @@ class Booksprint_skinTemplate extends BaseTemplate {
     echo $this->getIndicators();
 ?>
 
-        <h1 class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>">
+        <h1 class="firstHeading">
           <?php $this->html( 'title' ) ?>
         </h1>
         <div id="siteSub"><?php echo $this->getMsg( 'tagline' )->parse() ?></div>
