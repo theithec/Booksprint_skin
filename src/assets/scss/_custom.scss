@@ -31,7 +31,7 @@ a, a:visited {
 	}
 #mw-wrapper {
 	header {
-		img { float: left; height: 100px;}
+		img { float: left; max-width: 300px;}
 		h1 { display: inline;border: none; }
 		#user-tools { float:right; font-size: 0.8em;}
 	}
@@ -56,6 +56,7 @@ a, a:visited {
 			width: auto;
 			h3 { display: none; }
 			input[type=search]{ max-width: 8em;float: left;}
+			input[type=submit]{ padding-bottom: 1em; padding-top: 1em;}
 		} 
 	}
 }
@@ -119,6 +120,7 @@ p, table, li, a {
 }
 */
 @include breakpoint(medium up) {
+	header { margin-top: 1em; }
     /*
     p, table, li, a{
         font-size: 22px;

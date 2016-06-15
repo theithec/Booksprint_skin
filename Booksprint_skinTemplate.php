@@ -17,7 +17,8 @@ class Booksprint_skinTemplate extends BaseTemplate {
     //$this->outputLogo();
 ?>
 <header class="columns">
-<a href="<?php global $wgScriptPath;echo $wgScriptPath ?>"><img src="<?php echo $this->text('stylepath'); ?>/<?php echo $this->text('stylename'); ?>/dist/assets/img/TIB_LogoNT_de.png" alt="TIB Logo" /></a>
+<a href="<?php global $wgScriptPath;echo $wgScriptPath ?>/index.php">
+<img src="<?php global  $wgLogo; echo $wgLogo; ?>" alt="Handbuch.io" /></a>
 <div id="user-tools" class="subnav">
 <?php $this->outputUserLinks(); ?>
 </div>
@@ -26,12 +27,12 @@ class Booksprint_skinTemplate extends BaseTemplate {
 <?php 
     //echo $this->getMsg( 'navigation-heading' )->parse() 
     $this->outputSearch();
-    if ($this->loggedIn){
+    //if ($this->loggedIn){
       echo '<div id="page-tools" class="subnav">';
       $this->outputPageLinks();
       echo '</div>';
       //echo ' <div id="site-navigation" class="subnav"></div>';
-    } 
+    //} 
 ?>
 </div>
       <div style="float: left;" class="mw-body-wrapper columns">
@@ -176,7 +177,7 @@ class Booksprint_skinTemplate extends BaseTemplate {
     }
     $box['menustyle'] = 'vertical';
     echo ' <li role="navigation" class="mw-portlet" ' .
-      ' id=" ' .  Sanitizer::escapeId( $box['id'] ) .'" ' .
+      ' id="' .  Sanitizer::escapeId( $box['id'] ) .'" ' .
       Linker::tooltip( $box['id'] ) . ' >';
     $msg = isset($box['headerMessage'])? $this->getMsg($box['headerMessage'])->escaped() : $box['header'];
     echo '<a href="#">' . $msg . '</a>';
