@@ -26,6 +26,49 @@ class SkinBooksprint_skin extends SkinTemplate {
 			'skins.booksprint_skin.js'
 		) );
 	}
+	public function getBookname(){
+		global $wgTitle;
+		$title = $wgTitle;
+		if ($wgTitle->getBaseText() !==  $wgTitle->getFullText()){
+			$title = Title::newFromText($wgTitle->getBaseText());
+		}
+		if (in_array("Kategorie:Buch", array_keys($title->getParentCategories()))){
+			return $title->getBaseText();
+		}
+		return null;
+	}
+
+	public function hasBookTemplate(){
+
+		$bookname = $this->getBookname();
+
+		if ($bookname !== null){
+			$bookTemplatePath = __DIR__ . "/customize/" . $bookname . "/BookTemplate.php";
+			if ( file_exists($bookTemplatePath)){
+				require_once($bookTemplatePath);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public function getBookHeadItems(){
+		$items = array();
+		$bookname = $this->getBookname();
+		if ($bookname !== null){
+			global $wgScriptPath;
+			$cssPath =  __DIR__ . "/customize/" . $bookname . "/book.css";
+			if ( file_exists($cssPath)){
+				$items[$bookname . "_css"] = '<link rel="stylesheet" href="' . $wgScriptPath . '/skins/Booksprint_skin/customize/' . $bookname . '/book.css">';
+			}
+			$jsPath =  __DIR__ . "/customize/" . $bookname . "/book.js";
+			if ( file_exists($jsPath)){
+				$items[$bookname . "_js"] = '<script src="' . $wgScriptPath . '/skins/Booksprint_skin/customize/' . $bookname . '/book.js"></script>';
+			}
+
+		}
+		return $items;
+	}
 
 	/**
 	 * @param $out OutputPage
