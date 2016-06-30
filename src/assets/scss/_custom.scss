@@ -6,7 +6,7 @@ body {
 	color: $secondary-color;
 }
 
-input[type=submit]{ 
+input[type=submit]{
 	@extend .button;
 }
 
@@ -21,12 +21,12 @@ input[type=submit]{
 	}
 }
 a, a:visited {
-			
+
 			color: $primary-color;
 			&.new {
 				color: orange;
 				font-style: italic;
-			
+
 			}
 	}
 #mw-wrapper {
@@ -35,7 +35,7 @@ a, a:visited {
 		h1 { display: inline;border: none; }
 		#user-tools { float:right; font-size: 0.8em;}
 	}
-	
+
 	div.mw-body[role=main] {
 		background: $white;
 		padding-top: 1em;
@@ -43,7 +43,7 @@ a, a:visited {
 		float: none;
 		margin: 0 auto;
 
-		
+
 	}
 
 	div#mw-navigation {
@@ -57,7 +57,7 @@ a, a:visited {
 			h3 { display: none; }
 			input[type=search]{ max-width: 8em;float: left;}
 			input[type=submit]{ padding-bottom: 1em; padding-top: 1em;}
-		} 
+		}
 	}
 }
 
@@ -70,18 +70,18 @@ a, a:visited {
 
 .pseudoh1{
 	@extend h1;
-} 
+}
 h1, h2, h3, input, .pseudoh1 {
 	&, &>div[class^='mw-'] {
 		font-family: 'Roboto Condensed', sans-serif; // !important;
-	}	
+	}
 }
 
 .ve-init-target {
 	border: solid $secondary-color  thin;
 }
 
-#mw-footer{ 
+#mw-footer{
 	clear: both;
 	padding:0;
 	margin: 0 auto;
@@ -119,8 +119,22 @@ p, table, li, a {
     font-size: 12px;
 }
 */
+
+// bool-specific
+
+.book-sidebar {
+	float:left;
+	img {
+		max-width: 8em;
+		max-height: auto;
+	}
+}
+
 @include breakpoint(medium up) {
 	header { margin-top: 1em; }
+.book-sidebar {
+	float:right;
+}
     /*
     p, table, li, a{
         font-size: 22px;
