@@ -33,7 +33,8 @@ class SkinBooksprint_skin extends SkinTemplate {
 			$title = Title::newFromText($wgTitle->getBaseText());
 		}
 		if (in_array("Kategorie:Buch", array_keys($title->getParentCategories()))){
-			return $title->getBaseText();
+			return str_replace(" ", "_", $title->getBaseText());
+
 		}
 		return null;
 	}
