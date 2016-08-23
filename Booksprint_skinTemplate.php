@@ -76,7 +76,7 @@ class Booksprint_skinTemplate extends BaseTemplate
 	      </div>
 
 <?php
-		echo '<div style="float: left; width: 100%"><div style="float: left;" >';
+		echo '<div style="float: left; width: 100%"><div id="inner-main" >';
 		$this->html( 'bodycontent' );
 		echo "</div>";
 		echo $this->getBookSpecificSidebar();

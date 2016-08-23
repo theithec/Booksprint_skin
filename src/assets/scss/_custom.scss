@@ -130,6 +130,13 @@ p, table, li, a {
 	}
 }
 
+
+// overide width if you want a sidebar
+#inner-main {
+	float:left;
+	width: 100%;
+}
+
 @include breakpoint(medium up) {
 	header { margin-top: 1em; }
 .book-sidebar {
